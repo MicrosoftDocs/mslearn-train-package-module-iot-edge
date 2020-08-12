@@ -1,6 +1,6 @@
 This repository contains a labs to help you get started with Creating and deploying Azure machine learning module.
 
-[![Open in Visual Studio Online](https://img.shields.io/endpoint?style=social&url=https%3A%2F%2Faka.ms%2Fvso-badge)](https://online.visualstudio.com/environments/new?name=MSLearn-create-deploy-azure-ml-module&repo=mslearn-train-package-module-iot-edge)
+[![Open in Visual Studio Online](https://img.shields.io/endpoint?style=social&url=https%3A%2F%2Faka.ms%2Fvso-badge)](https://online.visualstudio.com/environments/new?name=MSLearn-create-deploy-azure-ml-module&repo=MicrosoftDocs/mslearn-train-package-module-iot-edge)
 
 ## Manually creating a VS Online Container
 
