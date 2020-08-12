@@ -1,0 +1,4 @@
+jupyter
+numpy 
+pandas 
+nbinteract==0.0.12 
