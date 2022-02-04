@@ -1,22 +1,31 @@
 This repository contains a labs to help you get started with Creating and deploying Azure machine learning module.
 
-[![Open in Visual Studio Online](https://img.shields.io/endpoint?style=social&url=https%3A%2F%2Faka.ms%2Fvso-badge)](https://online.visualstudio.com/environments/new?name=MSLearn-create-deploy-azure-ml-module&repo=MicrosoftDocs/mslearn-train-package-module-iot-edge)
+### VS Code Remote - Containers
+Follow these steps to open this sample in a container using the VS Code Remote - Containers extension:
 
-## Manually creating a VS Online Container
+1. If this is your first time using a development container, please ensure your system meets the pre-reqs (i.e. have Docker installed) in the [getting started steps](https://aka.ms/vscode-remote/containers/getting-started).
 
-To complete the labs, you'll need the following:
+2. To use this repository, you can either open the repository in an isolated Docker volume:
 
-- A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at <a href ='https://azure.microsoft.com' target='_blank'>https://azure.microsoft.com</a> or a Student Subscription at <a href ='https://aks.ms/azureforstudents' target='_blank'>https://aka.ms/azureforstudents</a>.
-- A Visual Studio Online environment. This provides a hosted instance of Visual Studio Code, in which you'll be able to run the notebooks for the lab exercises. To set up this environment:
-    1. Browse to <a href ='https://online.visualstudio.com' target='_blank'>https://online.visualstudio.com</a>
-    2. Click **Get Started**.
-    3. Sign in using the Microsoft account associated with your Azure subscription.
-    4. Click **Create environment**. If you don't already have a Visual Studio Online plan, create one. This is used to track resource utlization by your Visual Studio Online environments. Then create an environment with the following settings:
-        - **Environment Name**: *A name for your environment - for example, **MSLearn-create-deploy-azure-ml-module**.*
-        - **Git Repository**: MicrosoftDocs/mslearn-train-package-module-iot-edge
-        - **Instance Type**: Standard (Linux) 4 cores, 8GB RAM
-        - **Suspend idle environment after**: 120 minutes
-    5. Wait for the environment to be created, and then click **Connect** to connect to it. This will open a browser-based instance of Visual Studio Code.
+    - Press <kbd>F1</kbd> and select the **Remote-Containers: Try a Sample...** command.
+    - Choose the "Python" sample, wait for the container to start, and try things out!
+        > **Note:** Under the hood, this will use the **Remote-Containers: Clone Repository in Container Volume...** command to clone the source code in a Docker volume instead of the local filesystem. [Volumes](https://docs.docker.com/storage/volumes/) are the preferred mechanism for persisting container data.   
+
+   Or open a locally cloned copy of the code:
+
+   - Clone this repository to your local filesystem.
+   - Press <kbd>F1</kbd> and select the **Remote-Containers: Open Folder in Container...** command.
+   - Select the cloned copy of this folder, wait for the container to start, and try things out!
+
+3. **Rebuild or update your container**
+
+   You may want to make changes to your container, such as installing a different version of a software or forwarding a new port. You'll rebuild your container for your changes to take effect. 
+
+   **Open browser automatically:** As an example change, let's update the `portsAttributes` in the `.devcontainer/devcontainer.json` file to open a browser when our port is automatically forwarded.
+   
+   - Open the `.devcontainer/devcontainer.json` file.
+   - Modify the `"onAutoForward"` attribute in your `portsAttributes` from `"notify"` to `"openBrowser"`.
+   - Press <kbd>F1</kbd> and select the **Remote-Containers: Rebuild Container** or **Codespaces: Rebuild Container** command so the modifications are picked up.  
 
 ## Labs
 
