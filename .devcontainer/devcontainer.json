@@ -1,32 +1,25 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-        "name": "Python 3 - Anaconda",
-	"context": "..",
-	"dockerFile": "Dockerfile",
-	
-	 // Set *default* container specific settings.json values on container create.
-		"settings": { 
-			"terminal.integrated.shell.linux": "/bin/bash",
-			"python.pythonPath": "/opt/conda/bin/python",
-			"python.linting.enabled": true,
-			"python.linting.pylintEnabled": true,
-			"python.linting.pylintPath": "/opt/conda/bin/pylint"
-		},
-     // Add the IDs of extensions you want installed when the container is created.
-		 "extensions":[
-			"ms-python.python",
-			"ms-vscode.azure-account",
-			"ms-vscode.azurecli",
-			"ms-toolsai.vscode-ai",
-			"MS-vsliveshare.vsliveshare",
-		        "VisualStudioExptTeam.vscodeintellicode"
-		 ]
+	"name": "Python 3",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/python:0-3.6-bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/azure-cli:1": {}
+	}
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	//"postCreateCommand": "pip install -r requirements.txt",
-	
-	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
-	// "remoteUser": "vscode"
-}
+	// "postCreateCommand": "pip3 install --user -r requirements.txt",
 
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
